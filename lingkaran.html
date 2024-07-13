@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumus Lingkaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .container input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .container button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 48%;
+            margin: 1%;
+        }
+        .container button:first-child {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .container button:last-child {
+            background-color: #ffcc00;
+        }
+        .container .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Rumus Lingkaran</h1>
+        <img src="WhatsApp Image 2024-07-13 at 09.35.05.jpeg" alt="Rumus Lingkaran" style="max-width: 150px; height: auto;">
+        <input type="number" id="jari-jari" placeholder="Masukkan jari-jari">
+        <div>
+            <button onclick="hitungKeliling()">Hitung Keliling</button>
+            <button onclick="hitungLuas()">Hitung Luas</button>
+        </div>
+        <div class="result">
+            <p>Keliling: <span id="keliling"></span></p>
+            <p>Luas: <span id="luas"></span></p>
+        </div>
+    </div>
+
+    <script>
+        function hitungKeliling() {
+            const jariJari = document.getElementById('jari-jari').value;
+            const keliling = 2 * Math.PI * parseFloat(jariJari);
+            document.getElementById('keliling').textContent = keliling.toFixed(2);
+        }
+
+        function hitungLuas() {
+            const jariJari = document.getElementById('jari-jari').value;
+            const luas = Math.PI * Math.pow(parseFloat(jariJari), 2);
+            document.getElementById('luas').textContent = luas.toFixed(2);
+        }
+    </script>
+</body>
+</html>

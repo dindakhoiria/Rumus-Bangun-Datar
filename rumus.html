@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumus - Rumus Bangun Datar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Rumus Bangun Datar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bangun-datar.html">Bangun Datar</a></li>
+                <li><a href="rumus.html">Rumus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="rumus">
+        <h2>Rumus</h2>
+        <div class="input-container">
+            <label for="bangun-datar-select">Pilih Bangun Datar:</label>
+            <select id="bangun-datar-select">
+                <option value="">--Pilih--</option>
+                <option value="persegi">Persegi</option>
+                <option value="persegi-panjang">Persegi Panjang</option>
+                <option value="lingkaran">Lingkaran</option>
+                <option value="segitiga">Segitiga</option>
+                <!-- Tambahkan pilihan lain sesuai kebutuhan -->
+            </select>
+            <button class="btn" onclick="cariRumus()">Cari Rumus</button>
+        </div>
+
+        <div id="rumus-container">
+            <!-- Konten rumus akan ditampilkan di sini -->
+        </div>
+
+        <div id="hasil-container">
+            <div id="luas-container" class="hasil-box">
+                <h3>Hasil Luas</h3>
+                <p id="hasil-luas"></p>
+            </div>
+            <div id="keliling-container" class="hasil-box">
+                <h3>Hasil Keliling</h3>
+                <p id="hasil-keliling"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer tanpa hak cipta -->
+    </footer>
+</body>
+</html>
