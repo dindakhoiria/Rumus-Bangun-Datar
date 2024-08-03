@@ -48,6 +48,22 @@
         .container .result {
             margin-top: 20px;
         }
+        .back-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #6200ea;
+            color: white;
+            text-align: center;
+            cursor: pointer;
+            text-decoration: none;
+            width: 50%;
+        }
+        .back-button:hover {
+            background-color: #4500b5;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +79,7 @@
             <p>Keliling: <span id="keliling"></span></p>
             <p>Luas: <span id="luas"></span></p>
         </div>
+        <a href="index.html" class="back-button">Kembali</a>
     </div>
 
     <script>
@@ -78,3 +95,5 @@
             document.getElementById('luas').textContent = luas;
         }
     </script>
+</body>
+</html>
